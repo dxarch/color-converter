@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Converter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <h1 class="mt-5 mb-5">Color Converter</h1>
+  <div class="flex-container">
+    <div class="picker-container">
+      <div id="picker"></div>
+      <div class="color-list">
+        <section class="color" id="color-1"></section>
+        <section class="color" id="color-2"></section>
+        <section class="color" id="color-3"></section>
+        <section class="color" id="color-4"></section>
+        <section class="color" id="color-5"></section>
+      </div>
+    </div>
+    <div id="color-indicator">
+      rgb(255,255,255)
+    </div>
+    <div class="flex-item" id="cmyk">
+      <div class="form-group">
+        <label for="cmyk-c">C</label> 
+        <input type="number" class="form-control" id="cmyk-c" min="0" max="100" step="0.1" value="0" required="">
+      </div>
+      <div class="form-group">
+        <label for="cmyk-m">M</label> 
+        <input type="number" class="form-control" id="cmyk-m" min="0" max="100" step="0.1" value="0" required="">
+      </div>
+      <div class="form-group">
+        <label for="cmyk-y">Y</label> 
+        <input type="number" class="form-control" id="cmyk-y" min="0" max="100" step="0.1" value="0" required="">
+      </div>
+      <div class="form-group">
+        <label for="cmyk-k">K</label>
+         <input type="number" class="form-control" id="cmyk-k" min="0" max="100" step="0.1" value="0" required="">
+      </div>
+    </div>
+    <div class="flex-item" id="lab">
+      <div class="form-group">
+        <label for="lab-l">L</label> 
+        <input type="number" class="form-control" id="lab-l" min="0" max="100" step="0.1" value="100" required="">
+      </div>
+      <div class="form-group">
+        <label for="lab-a">A</label> 
+        <input type="number" class="form-control" id="lab-a" min="-86.185" max="98.254" step="0.1" value="0.0052" required="">
+      </div>
+      <div class="form-group">
+        <label for="lab-b">B</label> 
+        <input type="number" class="form-control" id="lab-b" min="-107.863" max="94.482" step="0.1" value="-0.01" required="">
+      </div>
+    </div>
+    <div class="flex-item" id="xyz">
+      <div class="form-group">
+        <label for="xyz-x">X</label>
+         <input type="number" class="form-control" id="xyz-x" min="0" max="95.05" value="95.05" step="0.1" required="">
+      </div>
+      <div class="form-group">
+        <label for="xyz-y">Y</label> 
+        <input type="number" class="form-control" id="xyz-y" min="0" max="100" value="100" step="0.1" required="">
+      </div>
+      <div class="form-group">
+        <label for="xyz-z">Z</label> 
+        <input type="number" class="form-control" id="xyz-z" min="0" max="108.89" value="108.89" step="0.1" required="">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5.5.2/dist/iro.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
